@@ -2,7 +2,7 @@
   <div id="app">
     <!-- Navigation Bar -->
     <nav class="bg-blue-900 text-white shadow-lg">
-      <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="container mx-auto px-5 py-5 flex justify-between items-center">
         <router-link to="/" class="text-xl font-bold">GLOPEBA</router-link>
         <div class="space-x-4">
           <router-link to="/" class="hover:text-blue-300">Home</router-link>
