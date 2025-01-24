@@ -17,7 +17,7 @@
           <table class="min-w-full">
             <thead>
               <tr>
-                <th>#</th>
+                <th>#No</th>
                 <th>Full Name</th>
                 <th>Phone</th>
                 <th>Approved</th>
