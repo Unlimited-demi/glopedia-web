@@ -44,14 +44,19 @@
           v-if="showModal"
           class="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50"
         >
-          <div class="bg-white p-6 rounded-lg w-full max-w-md">
-            <h3 class="text-lg font-bold mb-4">User Details</h3>
-            <p><strong>Full Name:</strong> {{ selectedUser.fullName }}</p>
-            <p><strong>Phone:</strong> {{ selectedUser.phoneNumber }}</p>
-            <p><strong>State:</strong> {{ selectedUser.state }}</p>
-            <p><strong>LGA:</strong> {{ selectedUser.lga }}</p>
-            <p><strong>Program:</strong> {{ selectedUser.program }}</p>
-            <p><strong>Approved:</strong> {{ selectedUser.approved ? 'Yes' : 'No' }}</p>
+          <div class="bg-white p-6 rounded-lg w-full max-w-md" >
+            
+            <h3 class="text-lg font-bold mb-4 ">User Details</h3>
+            <p class="m-2"><strong>Full Name:</strong> {{ selectedUser.fullName }}</p>
+            <p class="m-2"><strong>Phone:</strong> {{ selectedUser.phoneNumber }}</p>
+            <p class="m-2"><strong>State:</strong> {{ selectedUser.state }}</p>
+            <p class="m-2"><strong>LGA:</strong> {{ selectedUser.lga }}</p>
+            <p class="m-2"><strong>Program:</strong> {{ selectedUser.program }}</p>
+            <p class="m-2"><strong>Experience:</strong> {{ selectedUser.experience }}</p>
+            <p class="m-2"><strong>Approved:</strong> {{ selectedUser.approved ? 'Yes' : 'No' }}</p>
+            <p class="m-2"><strong>Sponser's Name:</strong> {{ selectedUser.sponsorName }}</p>
+            <p class="m-2"><strong>Sponser's Phone:</strong> {{ selectedUser.sponsorPhone }}</p>
+            
   
             <!-- Confirm Payment Button -->
             <button
