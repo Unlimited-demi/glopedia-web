@@ -8,6 +8,7 @@
           <router-link to="/" class="hover:text-blue-300">Home</router-link>
           
           <router-link to="/" class="hover:text-blue-300">Abouts</router-link>
+          <router-link to="/" class="hover:text-blue-300">Contact</router-link>
         </div>
       </div>
     </nav>

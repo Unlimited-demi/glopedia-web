@@ -286,7 +286,7 @@ const handleSubmit = async () => {
     const response = await axios.post(`${BASE_URL}/user/register`, formData.value)
     if (response.status ===200) {
       console.log(response.data)
-      router.push('/registrations')
+      
     }
     // On success
     toast.success('Registration submitted successfully!');  } catch (error) {
