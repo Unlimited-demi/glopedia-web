@@ -5,7 +5,7 @@ import RegistrationsList from '@/views/RegistrationsList.vue'
 
 
 const router = createRouter({
-  history: createWebHistory("/"),
+  history: createWebHistory(import.meta.env.VITE_FRONT_BASE_URL),
   routes: [
     
     {

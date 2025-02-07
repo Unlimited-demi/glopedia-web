@@ -202,6 +202,21 @@
           </button>
         </div>
       </div> -->
+      <div v-if="showPaymentModal" class="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50">
+        <div class="bg-white p-6 rounded shadow-md text-center">
+          <h2 class="text-xl font-bold mb-4">Payment Details</h2>
+          <p class="mb-2">Bank: Moniepoint</p>
+          <p class="mb-2">Account Name: GLobal Professionals Education and Business Academy LTD</p>
+          <p class="mb-2">Account Number: 6936436644</p>
+          <p class="mb-2">Send receipt to 08030974864 (WhatsApp)</p>
+          <button
+            @click="showPaymentModal = false"
+            class="mt-4 px-4 py-2 bg-blue-600 text-white rounded"
+          >
+            Close
+          </button>
+        </div>
+      </div>
     </main>
 
     <!-- Footer -->
@@ -269,6 +284,7 @@ const programs = [
 const registrations = ref([])
 const selectedUser = ref(null)
 const showModal = ref(false)
+const showPaymentModal = ref(false)
 
 // onMounted(async () => {
 //   const { data } = await axios.get('/list')
@@ -289,7 +305,9 @@ const handleSubmit = async () => {
       
     }
     // On success
-    toast.success('Registration submitted successfully!');  } catch (error) {
+    toast.success('Registration submitted successfully!');  
+    showPaymentModal.value = true;
+  } catch (error) {
     toast.error('Submission failed.');
   }
 }
